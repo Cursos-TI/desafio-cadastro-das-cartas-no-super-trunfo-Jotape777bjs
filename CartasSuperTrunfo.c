@@ -30,8 +30,7 @@ int main() {
     printf("Quantos pontos turisticos tem em sua cidade: ");
     scanf("%d", &pontos_turisticos1);
 
-    printf("Primeira carta terminada!!, Vamos para a segunda carta!\n"); //coletei todas as informações da primeira carta
-
+    printf("Primeira carta terminada!!, Vamos para a segunda carta!\n"); //as informações da primeira carta
     printf("Escolha seu estado entre A e H: ");
     scanf(" %c", &estado2);
 
@@ -53,9 +52,12 @@ int main() {
     printf("Quantos pontos turisticos tem em sua cidade: ");
     scanf("%d", &pontos_turisticos2);
 
-    printf("Prontinho! Segunda carta finalizada, agora podemos ver qual é mais forte!! \n");
+    printf("Prontinho! Segunda carta finalizada, agora podemos ver qual é mais forte!! \n");//informações da segunda carta
+    //vou começar a mostras as informaçoes da duas cartas, seguindo a ordem
     
-    
+    printf("\n");
+
+    print("Estado: ", estado1);
     
     
     
