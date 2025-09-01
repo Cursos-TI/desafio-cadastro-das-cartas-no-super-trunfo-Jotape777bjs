@@ -8,7 +8,8 @@ int main() {
     float area1, area2;
     float PIB1, PIB2;
     int pontos_turisticos1, pontos_turisticos2;
-
+    float desnsidade_populacional1, desnsidade_populacional2;
+    
     printf("Escolha seu estado entre A e H: ");
     scanf(" %c", &estado1);
 
