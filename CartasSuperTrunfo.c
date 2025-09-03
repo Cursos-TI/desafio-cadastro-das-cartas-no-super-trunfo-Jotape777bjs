@@ -4,7 +4,7 @@ int main() {
     char estado1, estado2;
     char codigo_carta1[20], codigo_carta2[20];
     char nome_da_cidade1[20], nome_da_cidade2[20];
-    unsigned long int populacao1, populacao2;
+    unsigned long int populacao1, populacao2;//esse modificador para aumentar a capacidade do int e remover as possibilidade de numeros negativos
     float area1, area2;
     float PIB1, PIB2;
     int pontos_turisticos1, pontos_turisticos2;
@@ -14,7 +14,7 @@ int main() {
     
     printf("Bem vindo ao criador de cartas Super Trunfo de Cidades Brasileiras!\n");
     printf("Vamos começar a criar suas cartas!\n");
-
+    //coletando todas as informações necessaria das cartas do jogador
     printf("Escolha seu estado entre A e H: ");
     scanf(" %c", &estado1);
 
@@ -107,7 +107,7 @@ int main() {
     printf("lhes desejo sorte jogadores!\n");
     
     printf("\n");
-
+    //calculo de super poder das cartas, somando todas e dividinda pela a quantidade de variaveis
     float super_poder1 = (populacao1 + area1 + PIB1 + PIB_per_capita1 + densidade_populacional1 + pontos_turisticos1) / 6;
     printf("Super poder carta 1: %.2f\n", super_poder1);
     
@@ -115,7 +115,7 @@ int main() {
     printf("Super poder carta 2: %.2f\n", super_poder2);
 
     printf("\n");
-    
+    //comparação das carta 1 e 2
     int comparacao = super_poder1 > super_poder2;
     int comparacao_popu = populacao1 > populacao2;
     int comparacao_area = area1 > area2;
@@ -124,9 +124,9 @@ int main() {
     int comparacao_densidade = densidade_populacional1 < densidade_populacional2;
     int comparacao_PIBpercapita = PIB_per_capita1 > PIB_per_capita2;
     
-
+    //imprimindo todas as informações de comparações na tela
     printf("Vai começar as comparações!\n");
-    printf("Ex: Numero 1 = (Carta 1), Numero 0 = (Carta 2)\n");
+    printf("Ex: Numero 1 = (Carta 1), Numero 0 = (Carta 2)\n");//explicando para o jogador as notas
     printf("\n");
 
     printf("População: %d\n", comparacao_popu);
