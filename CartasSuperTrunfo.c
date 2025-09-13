@@ -223,7 +223,7 @@ int main() {
         }
 
         if(escolhajogador1 == 1){ 
-            populacao1 > populacao2 ? printf("População:%d   || (Carta 1 venceu!!)\n", populacao1) : printf("População:%d   || (Carta 2 venceu!!)\n", populacao2);
+            populacao1 > populacao2 ? printf("População:%lu   || (Carta 1 venceu!!)\n", populacao1) : printf("População:%lu   || (Carta 2 venceu!!)\n", populacao2);
         }else if(escolhajogador1 == 2){
             area1 > area2 ? printf("Area:%.2f  || (Carta 1 venceu!!)\n", area1) : printf("Area:%.2f  || (Carta 2 venceu!!)\n", area2);
         }else if(escolhajogador1 == 3){
@@ -239,7 +239,7 @@ int main() {
         }
 
         if(escolhajogador2 == 1){ 
-            populacao1 > populacao2 ? printf("População:%d   || (Carta 1 venceu!!)\n", populacao1) : printf("População:%d   || (Carta 2 venceu!!)\n", populacao2);
+            populacao1 > populacao2 ? printf("População:%lu   || (Carta 1 venceu!!)\n", populacao1) : printf("População:%lu   || (Carta 2 venceu!!)\n", populacao2);
         }else if(escolhajogador2 == 2){
             area1 > area2 ? printf("Area:%.2f  || (Carta 1 venceu!!)\n", area1) : printf("Area:%.2f  || (Carta 2 venceu!!)\n", area2);
         }else if(escolhajogador2 == 3){
